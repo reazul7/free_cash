@@ -434,11 +434,11 @@
         </section>
 
         <!-- Frequently Asked Questions Section -->
-        <section class="my-10 bg-[#1e1e2e]">
+        <section class="my-10 bg-[#141524]">
             <h1 class="text-[24px] text-center font-bold text-white my-14">Frequently Asked Questions</h1>
             <div class="flex items-center justify-center">
 
-                <div class="max-w-[700px] bg-[#1e1e2e] shadow-md">
+                <div class="max-w-[700px] bg-[#141524] shadow-md">
                     <div x-data="{ openSections: [1] }" class="space-y-4">
                         <!-- Accordion 1 -->
                         <div class="border border-[rgb(255,255,255,0.08)] rounded-xl">
@@ -478,53 +478,63 @@
                             </button>
                             <div x-show="openSections.includes(2)" class="p-4 text-[#ccccdf] gap-4">
                                 <video width="640" height="360" controls>
-                                    <source src="https://freecash.nyc3.cdn.digitaloceanspaces.com/videos/freecash-how-to-en.webm" type="video/webm">
+                                    <source
+                                        src="https://freecash.nyc3.cdn.digitaloceanspaces.com/videos/freecash-how-to-en.webm"
+                                        type="video/webm">
                                 </video>
-                                
+
                                 <div class="space-y-6 text-[#ccccdf]">
                                     <!-- Step 1 -->
                                     <div class="relative flex items-start gap-4">
-                                        <span class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
+                                        <span
+                                            class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
                                             1
                                         </span>
                                         <div>
-                                            <p class="text-[16px] font-bold text-[#01D676]">Users complete tasks from advertisers</p>
+                                            <p class="text-[16px] font-bold text-[#01D676]">Users complete tasks from
+                                                advertisers</p>
                                             <p class="text-[14px] text-[#a9a8cd]">
-                                                Advertisers provide various tasks for users, including downloading an app, signing up for a website, 
+                                                Advertisers provide various tasks for users, including downloading an
+                                                app, signing up for a website,
                                                 watching videos, reaching a certain in-game level and much more.
                                             </p>
                                         </div>
                                     </div>
-                                
+
                                     <!-- Step 2 -->
                                     <div class="relative flex items-start gap-4">
-                                        <span class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
+                                        <span
+                                            class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
                                             2
                                         </span>
                                         <div>
-                                            <p class="text-[16px] font-bold text-[#01D676]">Advertisers pay Freecash for promotion</p>
+                                            <p class="text-[16px] font-bold text-[#01D676]">Advertisers pay Freecash for
+                                                promotion</p>
                                             <p class="text-[14px] text-[#a9a8cd]">
                                                 For every completed task, advertisers pay Freecash a commission.
                                             </p>
                                         </div>
                                     </div>
-                                
+
                                     <!-- Step 3 -->
                                     <div class="relative flex items-start gap-4">
-                                        <span class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
+                                        <span
+                                            class="flex items-center justify-center w-6 h-12 text-6xl font-bold text-[#01D676]">
                                             3
                                         </span>
                                         <div>
-                                            <p class="text-[16px] font-bold text-[#01D676]">Freecash sends user payouts</p>
+                                            <p class="text-[16px] font-bold text-[#01D676]">Freecash sends user payouts
+                                            </p>
                                             <p class="text-[14px] text-[#a9a8cd]">
-                                                After completing all task requirements, Freecash will send the user a payout.
+                                                After completing all task requirements, Freecash will send the user a
+                                                payout.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                                
+
+
+
                             </div>
                         </div>
 
@@ -533,14 +543,17 @@
                             <button
                                 @click="openSections.includes(3) ? openSections = openSections.filter(i => i !== 3) : openSections.push(3)"
                                 class="flex items-center justify-between w-full p-4 text-left text-[#ccccdf]">
-                                <span class="font-medium text-base text-white">How much money can you really earn on Freecash?</span>
+                                <span class="font-medium text-base text-white">How much money can you really earn on
+                                    Freecash?</span>
                                 <span :class="{'icon-rotate': openSections.includes(3)}"
                                     class="icon-transition text-[#ccccdf] text-xl">
                                     <i class="fas" :class="openSections.includes(3) ? 'fa-times' : 'fa-plus'"></i>
                                 </span>
                             </button>
                             <div x-show="openSections.includes(3)" class="p-4 text-[#ccccdf] gap-4">
-                                It is easily possible to earn more than $100 per month on Freecash, some users even reach $1000+ each month. You can check out the leaderboard to see how much the most active Freecash users earn.
+                                It is easily possible to earn more than $100 per month on Freecash, some users even
+                                reach $1000+ each month. You can check out the leaderboard to see how much the most
+                                active Freecash users earn.
                             </div>
                         </div>
                         <!-- Accordion 4 -->
@@ -548,22 +561,340 @@
                             <button
                                 @click="openSections.includes(4) ? openSections = openSections.filter(i => i !== 4) : openSections.push(4)"
                                 class="flex items-center justify-between w-full p-4 text-left text-[#ccccdf]">
-                                <span class="font-medium text-base text-white">How long does it take to cash out your money?</span>
+                                <span class="font-medium text-base text-white">How long does it take to cash out your
+                                    money?</span>
                                 <span :class="{'icon-rotate': openSections.includes(4)}"
                                     class="icon-transition text-[#ccccdf] text-xl">
                                     <i class="fas" :class="openSections.includes(3) ? 'fa-times' : 'fa-plus'"></i>
                                 </span>
                             </button>
                             <div x-show="openSections.includes(4)" class="p-4 text-[#ccccdf] gap-4">
-                                Freecash.com has a live support that is always online. Our team is working 24/7 and you can contact us any time at the top of the chat. If you request a withdrawal, it will most likely get approved in less than 2 minutes.
+                                Freecash.com has a live support that is always online. Our team is working 24/7 and you
+                                can contact us any time at the top of the chat. If you request a withdrawal, it will
+                                most likely get approved in less than 2 minutes.
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
+
+        <!-- Scrollable Section -->
+        <section class="py-20">
+            <div class="flex max-w-[1100px] max-h-[450px]  bg-[#1d1e30] rounded-[16px] mx-auto">
+                <!-- Left: Image Section -->
+                <div class="w-1/2 relative flex items-center justify-center bg-cover bg-center rounded-lg m-8"
+                    style="background-image: url('./images/live_bg.png');">
+                    <div class="text-center text-white">
+                        <p class="text-[24px]">This month users cashed out</p>
+                        <p class="text-[56px] font-bold">$760,503.40</p>
+                    </div>
+                </div>
+
+                <!-- Right: Scrollable Content -->
+                <div class="w-1/2 p-4 overflow-y-auto">
+                    <p class="text-white text-[24px] font-bold flex items-center">
+                        <span
+                            class="green-color-rounded-dot w-[14px] h-[14px] bg-[#01D676] rounded-full mr-[10px]"></span>
+                        <span>Live cashouts</span>
+                    </p>
+                    <div class="max-w-md mx-auto space-y-3">
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/stakeShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/paypalShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/amazonShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/stakeShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/paypalShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/amazonShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/stakeShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/paypalShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/amazonShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/stakeShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/paypalShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/amazonShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/stakeShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/paypalShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                        <!-- Card Item -->
+                        <div class="flex items-center justify-between bg-[#1e1f2c] p-4 rounded-lg shadow">
+                            <div class="flex items-center space-x-3 relative">
+                                <div class="relative w-10 h-10">
+                                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <img src="https://via.placeholder.com/12" alt="Country Flag"
+                                        class="w-4 h-4 rounded-full absolute bottom-0 right-0 border border-black">
+                                </div>
+                                <div>
+                                    <p class="text-[#a9a9ca] text-[14px] font-semibold">Sam</p>
+                                    <p class="text-[#7d7d9e] text-[12px]">6 seconds ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <p class="text-white font-bold text-[14px]">$5.00</p>
+                                <div class="w-[1px] h-5 bg-gray-500"></div>
+                                <img src="./images/amazonShopLogoEarn.svg" alt="" class="w-[20px] h-[20px]">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
 
 
         <!-- Start Earning Section -->
@@ -599,211 +930,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- ================= -->
-        <!-- ================= -->
-        <!-- ================= -->
-        <!-- ================= -->
-        <!-- COPYYYYY -->
-        <!-- ================= -->
-        <!-- ================= -->
-        <!-- ================= -->
-        <!-- ================= -->
-        <div>
-            <section class="max-w-[1100px] mx-auto px-4">
-                <div class="bg-[#1e1e2e] rounded-[16px] text-white py-[48px] text-center">
-                    <div class="lg:flex block justify-center gap-4">
-                        <!-- First Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-rocket pr-2"></i>
-                                <p class="font-bold">17m 12s</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average time until user makes first cashout</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Second Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-fire-flame-curved pr-2"></i>
-                                <p class="font-bold">$39.80</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average money earned by users yesterday</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Third Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-dollar-sign pr-2"></i>
-                                <p class="font-bold">50,000,000+</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Total USD earned on Freecash</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="my-10 bg-[#1e1e2e]">
-                <div class="px-[45px] py-[24px] text-center">
-                    <h1 class="text-[24px] font-bold text-white pb-4">Recommended by</h1>
-                    <div class="max-w-[1100px] mx-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-8">
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_1.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_2.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_3.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_4.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="max-w-[1100px] mx-auto px-4">
-                <div class="bg-[#1e1e2e] rounded-[16px] text-white py-[48px] text-center">
-                    <div class="lg:flex block justify-center gap-4">
-                        <!-- First Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-rocket pr-2"></i>
-                                <p class="font-bold">17m 12s</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average time until user makes first cashout</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Second Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-fire-flame-curved pr-2"></i>
-                                <p class="font-bold">$39.80</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average money earned by users yesterday</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Third Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-dollar-sign pr-2"></i>
-                                <p class="font-bold">50,000,000+</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Total USD earned on Freecash</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="my-10 bg-[#1e1e2e]">
-                <div class="px-[45px] py-[24px] text-center">
-                    <h1 class="text-[24px] font-bold text-white pb-4">Recommended by</h1>
-                    <div class="max-w-[1100px] mx-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-8">
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_1.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_2.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_3.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_4.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="max-w-[1100px] mx-auto px-4">
-                <div class="bg-[#1e1e2e] rounded-[16px] text-white py-[48px] text-center">
-                    <div class="lg:flex block justify-center gap-4">
-                        <!-- First Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-rocket pr-2"></i>
-                                <p class="font-bold">17m 12s</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average time until user makes first cashout</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Second Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-fire-flame-curved pr-2"></i>
-                                <p class="font-bold">$39.80</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Average money earned by users yesterday</p>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden lg:block w-[1px] h-[100px] bg-[rgb(255,255,255,0.08)]"></div>
-                        <div class="lg:hidden w-[96%] mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-
-                        <!-- Third Card -->
-                        <div class="px-[32px]">
-                            <div class="flex justify-center items-center text-[32px]">
-                                <i class="fa-solid fa-dollar-sign pr-2"></i>
-                                <p class="font-bold">50,000,000+</p>
-                            </div>
-                            <p class="text-[16px] text-[#ccccdd]">Total USD earned on Freecash</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="my-10 bg-[#1e1e2e]">
-                <div class="px-[45px] py-[24px] text-center">
-                    <h1 class="text-[24px] font-bold text-white pb-4">Recommended by</h1>
-                    <div class="max-w-[1100px] mx-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-8">
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_1.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_2.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_3.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <img src="./images/recommended_4.png" alt="" class="w-[150px] h-[80px] object-contain">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
 
     </main>
 </body>
