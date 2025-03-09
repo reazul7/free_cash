@@ -22,13 +22,11 @@ swiper-slide {
     text-align: left;
     background: #1d1e30;
     padding: 24px 16px;
-    height: 264px; /* Fixed height */
-    width: fit-content; /* Auto width based on content */
+    height: 264px;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Keeps content evenly spaced */
-    white-space: normal; /* Ensures text wraps properly */
     max-width: 100%;
-    overflow: hidden; /* Prevents overflow issues */
+    overflow: hidden;
     word-wrap: break-word; 
 }
