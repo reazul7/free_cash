@@ -55,6 +55,22 @@
             </div>
         </nav>
 
+        <!-- bottom nav -->
+        <nav
+            class="p-0 m-0 fixed bottom-0 left-0 w-full bg-[rgba(29,30,48,0.98)] shadow-md py-4 px-4 flex justify-between items-center z-50">
+            <div class="w-full flex xl:hidden justify-around">
+                <a href="#" class="flex flex-col items-center text-[#a9a9ca]">
+                    <i class="fa-solid fa-hand-holding-dollar text-2xl"></i>
+                    <span class="text-sm font-bold">Earn</span>
+                </a>
+                <a href="#" class="flex flex-col items-center text-[#a9a9ca]">
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                    <span class="text-sm font-bold">Cashout</span>
+                </a>
+            </div>
+        </nav>
+
+
         <!-- Hero Section -->
         <section class="hero-section relative w-full flex items-center justify-center text-center text-white">
             <div class="absolute inset-0 hero-bg"></div>
@@ -235,6 +251,39 @@
         </section>
 
         <!-- -----skip ---- -->
+        <!-- Start Earning Section -->
+        <section class="relative max-w-[1100px] mx-auto py-20">
+            <div class="flex gap-10">
+                <!-- Left Side: Fixed Content -->
+                <div id="left-panel" class="w-[40%] h-screen bg-gray-800 text-white p-6">
+                    <h2 class="text-3xl font-bold text-white">Start Earning</h2>
+                    <p class="text-[#ccccdd] mt-4">Unlock your potential and start earning today with our platform.
+                        Join
+                        us now!</p>
+                    <button class="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Right Side: Scrollable Cards -->
+                <div id="right-panel" class="w-[60%] bg-gray-200 p-6">
+                    <div class="h-[300vh]">
+                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold">Step 1: Sign Up</h3>
+                            <p class="text-[#ccccdd] mt-2">Create your account and set up your profile.</p>
+                        </div>
+                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold">Step 2: Complete Tasks</h3>
+                            <p class="text-[#ccccdd] mt-2">Start earning by completing simple tasks.</p>
+                        </div>
+                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold">Step 3: Withdraw Earnings</h3>
+                            <p class="text-[#ccccdd] mt-2">Cash out your earnings anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Best ways to earn Section -->
         <section>
@@ -892,14 +941,16 @@
         </section>
 
         <!-- Join the community Section -->
-         <section class="my-10 bg-[#141524]">
+        <section class="my-10 bg-[#141524]">
             <h1 class="text-[24px] text-center font-bold text-white my-14">Join the community</h1>
-            <p class="text-[#a9a8cd] max-w-[730px] mx-auto text-[14px] text-center font-bold py-2">When you sign up for Freecash, you join a community of millions of people who choose to make money online. This amazing community can help you to complete the offers fast and earn more money.</p>
-            <p class="text-[#a9a8cd] max-w-[730px] mx-auto text-[14px] text-center font-bold py-2">In this video, one of our community members shares how to get started on Freecash now.</p>
+            <p class="text-[#a9a8cd] max-w-[730px] mx-auto text-[14px] text-center font-bold py-2">When you sign up for
+                Freecash, you join a community of millions of people who choose to make money online. This amazing
+                community can help you to complete the offers fast and earn more money.</p>
+            <p class="text-[#a9a8cd] max-w-[730px] mx-auto text-[14px] text-center font-bold py-2">In this video, one of
+                our community members shares how to get started on Freecash now.</p>
             <div class="flex items-center pt-10">
                 <video width="730" height="410" controls class="mx-auto">
-                    <source
-                        src="https://freecash.nyc3.cdn.digitaloceanspaces.com/videos/freecash-ad-sound-fixes.mp4"
+                    <source src="https://freecash.nyc3.cdn.digitaloceanspaces.com/videos/freecash-ad-sound-fixes.mp4"
                         type="video/mp4">
                 </video>
             </div>
@@ -911,47 +962,177 @@
                     <img src="./images/5_green_star.png" alt="" class="h-6">
                 </div>
             </div>
-         </section>
+        </section>
 
-
-
-
-
-
-
-        <!-- Start Earning Section -->
-        <section class="relative max-w-[1100px] mx-auto py-20">
-            <div class="flex gap-10">
-                <!-- Left Side: Fixed Content -->
-                <div id="left-panel" class="w-[40%] h-screen bg-gray-800 text-white p-6">
-                    <h2 class="text-3xl font-bold text-white">Start Earning</h2>
-                    <p class="text-[#ccccdd] mt-4">Unlock your potential and start earning today with our platform.
-                        Join
-                        us now!</p>
-                    <button class="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
-                        Get Started
-                    </button>
-                </div>
-
-                <!-- Right Side: Scrollable Cards -->
-                <div id="right-panel" class="w-[60%] bg-gray-200 p-6">
-                    <div class="h-[300vh]">
-                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold">Step 1: Sign Up</h3>
-                            <p class="text-[#ccccdd] mt-2">Create your account and set up your profile.</p>
+        <!-- Footer section -->
+        <footer class="bg-[#1d1e30] text-white py-10">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Large Screen Footer -->
+                <div class="hidden md:flex justify-between items-start space-x-8">
+                    <div class="w-2/5">
+                        <div class="flex">
+                            <img src="./images/logo.png" alt="" class="h-[26px]">
+                            <img src="./images/branding.png" alt="" class="h-[26px]">
                         </div>
-                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold">Step 2: Complete Tasks</h3>
-                            <p class="text-[#ccccdd] mt-2">Start earning by completing simple tasks.</p>
+                        <p class="text-[#7d7d9e] text-[12px] pt-5 py-3">
+                            Freecash is a platform where users can earn money and rewards by completing tasks, surveys,
+                            and offers, with quick payout options like gift cards, PayPal, and cryptocurrencies.
+                        </p>
+                        <div class="py-4">
+                            <img src="./images/google-play.svg" alt="Google Play" class="h-18">
                         </div>
-                        <div class="card bg-[#1e1e2e] text-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold">Step 3: Withdraw Earnings</h3>
-                            <p class="text-[#ccccdd] mt-2">Cash out your earnings anytime.</p>
+                        <div class="mt-3 flex items-center">
+                            <span class="text-white text-[10px] pr-2 font-bold">Excellent</span>
+                            <img src="./images/5_green_star.png" alt="" class="h-[16px] pr-2">
+                            <img src="./images/trustpilotLogo.svg" alt="" class="h-[16px]">
+                        </div>
+                    </div>
+                    <div class="w-3/5 flex justify-between">
+                        <div>
+                            <h3 class="text-[#01D676] font-semibold">Freecash</h3>
+                            <ul class="mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Earn</a></li>
+                                <li><a href="#">Cashout</a></li>
+                                <li><a href="#">How to earn?</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-[#01D676] font-semibold">Resources</h3>
+                            <ul class="mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Live Support</a></li>
+                                <li><a href="#">Academy</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-[#01D676] font-semibold">Business</h3>
+                            <ul class="mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Mobile Footer -->
+                <div class="md:hidden">
+                    <div class="flex">
+                        <img src="./images/logo.png" alt="" class="h-[26px]">
+                        <img src="./images/branding.png" alt="" class="h-[26px]">
+                    </div>
+                    <p class="text-[#7d7d9e] text-[12px] pt-5 py-3">
+                        Freecash is a platform where users can earn money and rewards by completing tasks, surveys,
+                        and offers, with quick payout options like gift cards, PayPal, and cryptocurrencies.
+                    </p>
+                    <div class="py-4">
+                        <img src="./images/google-play.svg" alt="Google Play" class="h-18">
+                    </div>
+                    <div class="mt-3 flex items-center">
+                        <span class="text-white text-[10px] pr-2 font-bold">Excellent</span>
+                        <img src="./images/5_green_star.png" alt="" class="h-[16px] pr-2">
+                        <img src="./images/trustpilotLogo.svg" alt="" class="h-[16px]">
+                    </div>
+
+                    <div class="mt-6">
+                        <!-- Freecash Section -->
+                        <div class="border-b border-gray-600 py-2">
+                            <button onclick="toggleMenu('freecash-menu')"
+                                class="w-full flex justify-between text-[#01D676] font-semibold">
+                                Freecash <span>▼</span>
+                            </button>
+                            <ul id="freecash-menu" class="hidden mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Earn</a></li>
+                                <li><a href="#">Cashout</a></li>
+                                <li><a href="#">How to earn?</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Resources Section -->
+                        <div class="border-b border-gray-600 py-2">
+                            <button onclick="toggleMenu('resources-menu')"
+                                class="w-full flex justify-between text-[#01D676] font-semibold">
+                                Resources <span>▼</span>
+                            </button>
+                            <ul id="resources-menu" class="hidden mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Live Support</a></li>
+                                <li><a href="#">Academy</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Business Section -->
+                        <div class="border-b border-gray-600 py-2">
+                            <button onclick="toggleMenu('business-menu')"
+                                class="w-full flex justify-between text-[#01D676] font-semibold">
+                                Business <span>▼</span>
+                            </button>
+                            <ul id="business-menu" class="hidden mt-2 space-y-2 text-[#ccccdd]">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer Bottom -->
+                <div class="text-center text-[#ccccdd] mt-6 text-sm">
+                    <p>© Freecash 2025 • <a href="#">Terms of Service</a> • <a href="#">Privacy Policy</a> • <a
+                            href="#">Cookie Policy</a></p>
+                    <div class="flex justify-center items-center mt-4">
+                        <button class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                            <img src="flag.png" alt="Flag" class="w-5 h-5 mr-2"> English
+                        </button>
+                    </div>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="https://twitter.com/freecashcom" target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/freecashsite" target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/freecash_com" target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.reddit.com/r/FreeCash/" target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-reddit"></i>
+                        </a>
+                        <a href="https://discord.gg/ddnWVZt" target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCJ3XenTJaY3y4_Ot8jsc2gA" target="_blank"
+                            class="text-[#ccccdd] text-lg">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.trustpilot.com/review/freecash.com?utm_medium=trustbox&utm_source=MicroReviewCount"
+                            target="_blank" class="text-[#ccccdd] text-lg">
+                            <i class="fa-solid fa-star"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Start Earning Button for Mobile -->
+                <div class="md:hidden mt-6">
+                    <button class="w-full bg-green-500 py-3 rounded-md text-white font-bold">Start earning now</button>
+                </div>
             </div>
-        </section>
+        </footer>
+
+
+        <script>
+            function toggleMenu(menuId) {
+                var menu = document.getElementById(menuId);
+                menu.classList.toggle("hidden");
+            }
+        </script>
+
+
+
+
+
+
 
     </main>
 </body>
