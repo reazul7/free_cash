@@ -1,0 +1,34 @@
+body {
+    font-family: Poppins, Roboto, -apple-system, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.hero-bg {
+    background-image: url('./images/hero-shadow-bg-2.a60035d9.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08;
+    transform: rotate(-5deg);
+    transform-origin: 18px center;
+    width: 95%;
+    height: 400px;
+}
+
+/* swiper */
+swiper-container {
+    width: 100%;
+}
+
+swiper-slide {
+    text-align: left;
+    background: #1d1e30;
+    padding: 24px 16px;
+    height: 264px; /* Fixed height */
+    width: fit-content; /* Auto width based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps content evenly spaced */
+    white-space: normal; /* Ensures text wraps properly */
+    max-width: 100%;
+    overflow: hidden; /* Prevents overflow issues */
+    word-wrap: break-word; 
+}
