@@ -41,5 +41,3 @@ ScrollTrigger.create({
     end: "bottom bottom",
     pinSpacing: false
 });
-
-

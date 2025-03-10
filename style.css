@@ -29,7 +29,8 @@ swiper-slide {
     max-width: 100%;
     overflow: hidden;
     word-wrap: break-word;
-    border-radius: 16px;;
+    border-radius: 16px;
+    ;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -61,6 +62,51 @@ swiper-slide {
     overflow-y: scroll;
     scrollbar-width: none;
 }
+
 .overflow-y-auto::-webkit-scrollbar {
     display: none;
+}
+
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    animation: fadeIn 0.3s;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
