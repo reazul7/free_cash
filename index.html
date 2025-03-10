@@ -11,45 +11,6 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const modal = document.getElementById("modal");
-            const modalBody = document.getElementById("modal-body");
-            const modalTitle = document.getElementById("modal-title");
-
-            // Open Modal Function
-            window.openModal = function (page, title) {
-                modalTitle.innerText = title;
-                fetch(page)
-                    .then(response => response.text())
-                    .then(data => {
-                        modalBody.innerHTML = data;
-                        modal.classList.remove("hidden"); // Show modal
-                        modal.classList.add("flex"); // Ensure flex for centering
-
-                        // Disable Scroll on Body
-                        document.body.style.overflow = "hidden";
-                    })
-                    .catch(error => console.error("Error loading modal content:", error));
-            };
-
-            // Close Modal Function
-            window.closeModal = function () {
-                modal.classList.add("hidden");
-                modal.classList.remove("flex");
-
-                // Enable Scroll on Body
-                document.body.style.overflow = "auto";
-            };
-
-            // Close Modal on Outside Click
-            modal.addEventListener("click", function (event) {
-                if (event.target === modal) {
-                    closeModal();
-                }
-            });
-        });
-    </script>
 </head>
 
 <body class="bg-[#141524]">
@@ -91,14 +52,13 @@
                     <span>Sign Up</span>
                 </a>
             </div>
-
-            <!-- 1.25px solid rgb(47, 48, 67) -->
             <!-- Modal -->
             <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
-                <div class="relative w-[470px] p-6 rounded-[16px] bg-[#141524] bg-gradient-to-br from-[rgba(1,214,118,0.4)] to-[rgba(1,214,118,0)]">
+                <div
+                    class="relative w-[470px] p-6 rounded-[16px] bg-[#141524] bg-gradient-to-br from-[rgba(1,214,118,0.4)] to-[rgba(1,214,118,0)]">
                     <div class="relative flex items-center justify-center mb-4">
                         <h2 id="modal-title" class="text-white text-[24px] font-bold">Modal Title</h2>
-                        <button onclick="closeModal()" 
+                        <button onclick="closeModal()"
                             class="absolute right-0 w-8 h-8 rounded-full text-white flex items-center justify-center text-lg border border-[#2F3043]">
                             &times;
                         </button>
@@ -110,7 +70,7 @@
 
         <!-- bottom nav -->
         <nav
-            class="p-0 m-0 fixed bottom-0 left-0 w-full bg-[rgba(29,30,48,0.98)] shadow-md py-4 px-4 flex justify-between items-center z-50">
+            class="p-0 m-0 fixed bottom-0 left-0 w-full bg-[#141524] shadow-md py-2 px-4 flex justify-between items-center z-50">
             <div class="w-full flex xl:hidden justify-around">
                 <a href="#" class="flex flex-col items-center text-[#a9a9ca]">
                     <i class="fa-solid fa-hand-holding-dollar text-2xl"></i>
@@ -122,7 +82,6 @@
                 </a>
             </div>
         </nav>
-
 
         <!-- Hero Section -->
         <section class="hero-section relative w-full flex items-center justify-center text-center text-white">
@@ -147,7 +106,7 @@
                 <div class="lg:flex justify-between gap-[20px] mt-[48px] px-2">
                     <!-- Card -->
                     <div>
-                        <div class="flex flex-row gap-[30px] min-w-[250px]">
+                        <div class="flex flex-row gap-[30px] min-w-[250px] justify-center md:justify-normal">
                             <!-- First Card -->
                             <div class="h-[210px] bg-[#252539] p-[16px] rounded-[8px] text-left">
                                 <img src="./images/netflix.webp" alt="" class="w-[122px] h-[122px]">
@@ -185,9 +144,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-10 text-left pos">
+                        <div class="pt-10 text-left text-center md:text-left">
                             <p class="text-[14px] text-[#A9A8CD]">See our 161,449 reviews on</p>
-                            <div class="flex py-2">
+                            <div class="flex py-2 justify-center md:justify-normal">
                                 <img src="./images/trustpilotLogo.svg" alt="" class="h-6 pr-2">
                                 <img src="./images/5_green_star.png" alt="" class="h-6">
                             </div>
@@ -195,7 +154,7 @@
                     </div>
 
                     <!-- Signup Form -->
-                    <div class="bg-[#252539] p-[26px] rounded-[15px] mt-8 lg:mt-0">
+                    <div class="bg-[#252539] p-[26px] rounded-[15px] mt-8 lg:mt-0 w-3/4 md:w-80 mx-auto md:mx-none">
                         <h1 class="text-[24px] font-bold text-white mb-4">Sign Up for Free</h1>
                         <div class="relative w-full mb-4 font-semibold ">
                             <i
@@ -285,7 +244,7 @@
             <div class="px-[45px] py-[24px] text-center">
                 <h1 class="text-[24px] font-bold text-white pb-4">Recommended by</h1>
                 <div class="max-w-[1100px] mx-auto">
-                    <div class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                    <div class="grid grid-cols-2 md:grid-cols-2 md:grid-cols-4 gap-8">
                         <div class="flex justify-center items-center">
                             <img src="./images/recommended_1.png" alt="" class="w-[150px] h-[80px] object-contain">
                         </div>
@@ -345,7 +304,7 @@
             <div class="py-[24px]">
                 <h1 class="text-[24px] font-bold text-white py-4 pb-12 text-center">Best ways to earn</h1>
                 <div class="max-w-[1100px] mx-auto">
-                    <div class="grid grid-cols-2 sm:grid-cols-1 xl:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-8 px-2">
                         <div class="bg-[#1d1e30] rounded-[16px] px-[24px] pt-[30px]">
                             <div class="text-center text-white">
                                 <p class="text-xl font-bold">Play Games</p>
@@ -394,7 +353,7 @@
                     <span class="text-[#01D676]">Here’s why</span>
                 </h1>
                 <div class="max-w-[1100px] mx-auto">
-                    <div class="grid grid-cols-2 sm:grid-cols-1 xl:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-8 px-2">
                         <div class="bg-[#1d1e30] rounded-[16px] px-[24px] py-[30px]">
                             <div class="text-center text-white">
                                 <img src="images/heres_why_1.png" alt="" class="h-[80px] w-[80px] mx-auto">
@@ -429,7 +388,7 @@
             <div class="px-[45px] py-[24px] text-center">
                 <h1 class="text-[24px] font-bold text-white pb-4">Cashout via</h1>
                 <div class="mx-auto">
-                    <div class="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-10 gap-8">
+                    <div class="grid grid-cols-10 gap-8">
                         <div class="flex justify-center items-center">
                             <img src="./images/Cashout_via_Amazon.webp" alt=""
                                 class="w-[40px] h-[40px] my-2 object-contain">
@@ -587,7 +546,7 @@
                                         type="video/webm">
                                 </video>
 
-                                <div class="space-y-6 text-[#ccccdf]">
+                                <div class="space-y-6 text-[#ccccdf] p-4">
                                     <!-- Step 1 -->
                                     <div class="relative flex items-start gap-4">
                                         <span
@@ -1136,7 +1095,7 @@
 
                 <!-- Footer Bottom -->
                 <div class="w-100 mx-auto h-[1px] bg-[rgb(255,255,255,0.08)] my-4"></div>
-                <div class="text-center text-[#ccccdd] mt-6 text-sm">
+                <div class="text-center text-[#ccccdd] mt-6 text-sm mb-10 xl:mb-0">
                     <p>
                         &copy; Freecash 2025 <span class="px-1">•</span>
                         <a href="#">Terms of Service</a> <span class="px-1">•</span>
@@ -1190,6 +1149,39 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("modal");
+        const modalBody = document.getElementById("modal-body");
+        const modalTitle = document.getElementById("modal-title");
 
+        window.openModal = function (page, title) {
+            modalTitle.innerText = title;
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    modalBody.innerHTML = data;
+                    modal.classList.remove("hidden");
+                    modal.classList.add("flex");
+
+                    document.body.style.overflow = "hidden";
+                })
+                .catch(error => console.error("Error loading modal content:", error));
+        };
+
+        window.closeModal = function () {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+
+            document.body.style.overflow = "auto";
+        };
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    });
+</script>
 
 </html>
