@@ -29,6 +29,7 @@ swiper-slide {
     max-width: 100%;
     overflow: hidden;
     word-wrap: break-word;
+    border-radius: 16px;;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
